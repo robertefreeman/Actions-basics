@@ -17,7 +17,7 @@ The time we greeted you.
 ## Example usage
 
 ```yaml
-uses: actions/hello-world-docker-action@master
+uses: robertefreeman/Actions-basics@master
 with:
   who-to-greet: 'Mona the Octocat'
 ```
