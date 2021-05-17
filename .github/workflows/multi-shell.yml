@@ -1,0 +1,19 @@
+name: Shell Commands
+
+on: [workflow_dispatch]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo string
+        run: echo "Hello World"
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
+      - name: python Command
+        shell: python
+        run: |
+          import platform
+          print platform.processor()
