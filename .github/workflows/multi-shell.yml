@@ -1,4 +1,4 @@
-name: Shell Commands
+name: MultiShell Commands
 
 on: [workflow_dispatch]
 
@@ -16,4 +16,4 @@ jobs:
         shell: python
         run: |
           import platform
-          print platform.processor()
+          print(platform.processor())
